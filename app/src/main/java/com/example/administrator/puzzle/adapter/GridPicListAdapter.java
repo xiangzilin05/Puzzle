@@ -3,15 +3,17 @@ package com.example.administrator.puzzle.adapter;
 import android.R.color;
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
 
-import com.imooc.xpuzzle.util.ScreenUtil;
 
 import java.util.List;
+
+import utils.ScreenUtil;
 
 /**
  * 程序主界面数据适配器
@@ -59,7 +61,7 @@ public class GridPicListAdapter extends BaseAdapter {
         } else {
             iv_pic_item = (ImageView) convertView;
         }
-        iv_pic_item.setBackgroundColor(color.black);
+        iv_pic_item.setBackgroundColor(Color.BLACK);
         iv_pic_item.setImageBitmap(picList.get(position));
         return iv_pic_item;
     }
